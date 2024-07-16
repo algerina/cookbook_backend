@@ -3,7 +3,6 @@ from django.db import models
 class Recipe(models.Model):
   title = models.CharField(max_length=200)
   description = models.TextField()
-  image = models.ImageField(upload_to='images/')
   ingredients = models.TextField()
   instructions = models.TextField()
   cooking_time = models.IntegerField(help_text="Cooking time in minutes")
